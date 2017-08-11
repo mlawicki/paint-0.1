@@ -36,6 +36,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.edycjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -88,7 +88,8 @@
             // 
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Location = new System.Drawing.Point(434, 26);
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(432, 26);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(65, 60);
             this.button7.TabIndex = 16;
@@ -99,6 +100,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Blue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(8, 26);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(65, 60);
@@ -110,6 +112,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Red;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(363, 26);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(65, 60);
@@ -121,6 +124,7 @@
             // 
             this.button8.BackColor = System.Drawing.Color.Black;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Location = new System.Drawing.Point(501, 26);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(65, 60);
@@ -132,6 +136,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(292, 26);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(65, 60);
@@ -143,6 +148,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Aqua;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(79, 26);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(65, 60);
@@ -171,6 +177,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "10";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -182,7 +198,8 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(4, 46);
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(3, 46);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(18, 21);
             this.button15.TabIndex = 10;
@@ -192,7 +209,8 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(28, 46);
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(24, 46);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(18, 21);
             this.button14.TabIndex = 9;
@@ -257,6 +275,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Yellow;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(221, 26);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(65, 60);
@@ -268,6 +287,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Lime;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(150, 26);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(65, 60);
@@ -301,14 +321,14 @@
             // nowyToolStripMenuItem
             // 
             this.nowyToolStripMenuItem.Name = "nowyToolStripMenuItem";
-            this.nowyToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.nowyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nowyToolStripMenuItem.Text = "Nowy...";
             this.nowyToolStripMenuItem.Click += new System.EventHandler(this.nowyToolStripMenuItem_Click);
             // 
             // otwórzToolStripMenuItem
             // 
             this.otwórzToolStripMenuItem.Name = "otwórzToolStripMenuItem";
-            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.otwórzToolStripMenuItem.Text = "Otwórz";
             this.otwórzToolStripMenuItem.Click += new System.EventHandler(this.otwórzToolStripMenuItem_Click);
             // 
@@ -316,14 +336,14 @@
             // 
             this.zapiszToolStripMenuItem.Enabled = false;
             this.zapiszToolStripMenuItem.Name = "zapiszToolStripMenuItem";
-            this.zapiszToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.zapiszToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.zapiszToolStripMenuItem.Text = "Zapisz";
             this.zapiszToolStripMenuItem.Click += new System.EventHandler(this.zapiszToolStripMenuItem_Click);
             // 
             // koniecToolStripMenuItem
             // 
             this.koniecToolStripMenuItem.Name = "koniecToolStripMenuItem";
-            this.koniecToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.koniecToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.koniecToolStripMenuItem.Text = "Koniec";
             this.koniecToolStripMenuItem.Click += new System.EventHandler(this.koniecToolStripMenuItem_Click);
             // 
@@ -339,16 +359,6 @@
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "10";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Paint
             // 

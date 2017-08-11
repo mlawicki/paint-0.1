@@ -64,10 +64,20 @@ namespace paint3
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
             if (rysowanierozpoczete)
+               
             koniec = e.Location;
             g = panel1.CreateGraphics();
             g.DrawLine(pioro, poczatek, koniec);
             poczatek = koniec;
+
+            /*   if (figura == 4)
+                   rysowanierozpoczete = false;
+                   poczatek coordinates = Cursor.Position;
+                   koniec = e.Location;
+                   g = panel1.CreateGraphics();
+                   g.DrawLine(pioro, poczatek, koniec);      */
+
+
 
 
 
@@ -135,8 +145,29 @@ namespace paint3
         private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-                    System.Windows.Forms.MessageBox.Show("Funkcja jeszcze nieobslugiwana");
+            /*     SaveFileDialog save = new SaveFileDialog();
+                 save.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+                 if (save.ShowDialog() == DialogResult.OK)
+                 {
 
+
+                     int szerokoscobrazu = panel1.Size.Width;
+                     int wysokoscobrazu = panel1.Size.Height;
+                     using (Bitmap bmp = new Bitmap(szerokoscobrazu, wysokoscobrazu))
+                     {
+
+
+                 panel1.DrawToBitmap(bmp, new Rectangle(0, 0, szerokoscobrazu, wysokoscobrazu));
+                 bmp.Save(save.FileName);
+
+
+             }
+                 }
+
+                 else
+                     System.Windows.Forms.MessageBox.Show("nie udało się zapisać obrazka");
+
+                 poki co - zapisuje pusta zawartosc - do dopracowania*/
 
         }
 
